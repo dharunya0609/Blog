@@ -64,7 +64,7 @@ app.post('/products/delete',async(req,res)=>{
        res.redirect('http://localhost:3000/products')
 
     })
-const PORT = 5000 || process.env.PORT
+const PORT = process.env.PORT || 3000 
 app.listen(PORT,function(){
    console.log("Server is running")
 }
